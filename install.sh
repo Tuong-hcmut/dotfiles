@@ -154,7 +154,7 @@ use_default_config() {
         username=$CURRENT_USERNAME
         HOST='laptop'  # Set default host, change as needed
         echo -e "Using default username: ${GREEN}$username${NORMAL}, host: ${GREEN}$HOST${NORMAL}, and Aseprite: ${ASESPRITE_COLOR}."
-        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        if [[ ! $ASESPRITE =~ ^[Yy]$ ]]; then
            sed -i '3s/  /  # /' modules/home/aseprite/aseprite.nix
         fi
     else
