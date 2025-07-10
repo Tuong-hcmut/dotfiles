@@ -6,13 +6,13 @@
   ];
   
   #drivers.amdgpu.enable = false;
-  /*drivers.intel.enable = true;
+  #drivers.intel.enable = true;
   drivers.nvidia.enable = true;
   drivers.nvidia-prime = {
     enable = true;
     intelBusID = "PCI:0:2:0";
     nvidiaBusID = "PCI:1:0:0";
-  };*/
+  };
   #vm.guest-services.enable = false;
   #local.hardware-clock.enable = true;
   #packages.enable = true;

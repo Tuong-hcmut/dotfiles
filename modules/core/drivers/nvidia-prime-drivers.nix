@@ -12,19 +12,19 @@ in {
     enable = mkEnableOption "Enable Nvidia Prime Hybrid GPU Offload";
     intelBusID = mkOption {
       type = types.str;
-      default = "PCI:1:0:0";
+      default = "PCI:0:2:0";
     };
     nvidiaBusID = mkOption {
       type = types.str;
-      default = "PCI:0:2:0";
+      default = "PCI:1:0:0";
     };
   };
 
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
-        vulkanPackages_latest.vulkan-loader
-        vulkanPackages_latest.vulkan-validation-layers
-        vulkanPackages_latest.vulkan-tools
+        vulkan-loader
+        vulkan-validation-layers
+        vulkan-tools
         libva-utils
     ];
     hardware.nvidia = {

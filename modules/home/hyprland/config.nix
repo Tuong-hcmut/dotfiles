@@ -19,6 +19,7 @@ in
         "waybar &"
         #"ibus start --type wayland"
         "fcitx5 &"
+        "nemo --no-desktop --quit"
 
         "swaync &"
         "hyprctl setcursor Bibata-Modern-Ice 15 &"
@@ -172,6 +173,9 @@ in
         "$mainMod, T, exec, toggle-oppacity"
         "$mainMod, E, exec, nemo"
         "ALT, E, exec, hyprctl dispatch exec '[float; size 1111 700] nemo'"
+        "$mainMod, Y, exec, ${terminal} -e superfile"
+        "ALT, Y, exec, hyprctl dispatch exec '[float; size 1111 700] ${terminal} -e superfile'"
+
         "$mainMod SHIFT, B, exec, toggle-waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"

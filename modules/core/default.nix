@@ -4,7 +4,7 @@
     ./bootloader.nix
     ./hardware.nix
     ./xserver.nix
-    #./drivers
+    ./drivers/default.nix
     ./network.nix
     ./nh.nix
     ./pipewire.nix

@@ -31,6 +31,8 @@
         systems.follows = "hyprland/systems";
       };
     };
+    
+    catppuccin.url = "github:catppuccin/nix";
 
     nur.url = "github:nix-community/NUR";
     nix-gaming.url = "github:fufexan/nix-gaming";

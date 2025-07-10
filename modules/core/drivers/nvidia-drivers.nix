@@ -51,8 +51,8 @@ in {
       nvidiaPersistenced = false;
       open = false;
       nvidiaSettings = true;
-      #package = config.boot.kernelPackages.nvidiaPackages.beta;
-      package = nvidiaPackage;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      #package = nvidiaPackage;
     };
   };
 }

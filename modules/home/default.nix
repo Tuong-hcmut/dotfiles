@@ -1,4 +1,4 @@
-{ ... }:
+{ inputs,... }:
 {
   imports = [
     ./aseprite/aseprite.nix           # pixel art editor
@@ -16,10 +16,11 @@
     ./git.nix                         # version control
     ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
+    ./helix                           # code editor
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
-    ./micro.nix                       # nano replacement
+    # ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
     ./nix-search/nix-search.nix       # TUI to search nixpkgs
     ./nvim.nix                        # neovim editor
@@ -40,5 +41,6 @@
     ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
     ./zsh                             # shell
+    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 }
