@@ -100,14 +100,16 @@ get_host() {
 }
 
 aseprite() {
-    # whether to install aseprite or not
-    echo -en "Disable ${GREEN}Aseprite${NORMAL} (faster install) ? [${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
+    echo -en "Install ${GREEN}Aseprite${NORMAL}? [${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
     read -n 1 -r
     echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        return
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        # Uncomment line 3 if commented
+        sed -i '3s/^  # //' modules/home/aseprite/aseprite.nix
+    else
+        # Comment line 3 if not already
+        sed -i '3{/^[[:space:]]*#/!s/^[[:space:]]*/  # /}' modules/home/aseprite/aseprite.nix
     fi
-    sed -i '3s/  /  # /' modules/home/aseprite/aseprite.nix
 }
 
 install() {

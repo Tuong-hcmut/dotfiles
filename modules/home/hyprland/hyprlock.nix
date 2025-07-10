@@ -22,8 +22,8 @@
       background = [
         {
           monitor = "";
-          path = "${../../../wallpapers/otherWallpaper/gruvbox/astronaut.jpg}";
-          #path = "${../../../wallpapers/otherWallpaper/gruvbox/Hill_of_Swords.png}";
+          #path = "${../../../wallpapers/otherWallpaper/gruvbox/astronaut.jpg}";
+          path = "${../../../wallpapers/otherWallpaper/gruvbox/hill_of_swords.png}";
           blur_passes = 2;
           contrast = 0.8916;
           brightness = 0.8172;

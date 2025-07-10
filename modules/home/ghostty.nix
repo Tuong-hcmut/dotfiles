@@ -13,6 +13,7 @@ in
   xdg.configFile."ghostty/config".text = ''
     # Font
     font-family = "Maple Mono"
+    font-family = "DejaVu Sans"
     font-size = ${if (host == "laptop") then "9" else "10"}
     font-feature = calt
     font-feature = ss03
@@ -21,7 +22,7 @@ in
     selection-invert-fg-bg = true
 
     # Theme
-    theme = "gruvbox"
+    theme = "Catppuccin-mocha"
     background-opacity = 0.66
 
     cursor-style = bar

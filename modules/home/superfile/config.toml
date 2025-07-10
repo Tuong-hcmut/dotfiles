@@ -1,7 +1,7 @@
 # ========== General ========== #
-theme = 'gruvbox-dark-hard'
-editor = "micro"
-dir_editor = "nemo"
+theme = 'catppuccin-mocha'
+editor = "helix"
+dir_editor = "superfile"
 
 auto_check_update = false
 
@@ -41,6 +41,5 @@ border_middle_left = '├'
 border_middle_right = '┤'
 
 # ========== Plugins ========== #
-
 metadata = false # needs exiftool
 enable_md5_checksum = false

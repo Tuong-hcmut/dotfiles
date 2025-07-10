@@ -19,21 +19,19 @@
       name = "Maple Mono";
       size = 11;
     };
-    theme = {
-      name = "Colloid-Green-Dark-Gruvbox";
-      package = pkgs.colloid-gtk-theme.override {
-        colorVariants = [ "dark" ];
-        themeVariants = [ "green" ];
-        tweaks = [
-          "gruvbox"
-          "rimless"
-          "float"
-        ];
-      };
-    };
+    catppuccin = {
+    enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+    size = "standard";
+    tweaks = [ "normal" ];
+  };
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme.override { color = "black"; };
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "lavender";
+      };
     };
     cursorTheme = {
       name = "Bibata-Modern-Ice";

@@ -25,14 +25,14 @@
     XDG_SESSION_DESKTOP = "Hyprland";
     SDL_VIDEODRIVER = "wayland";
     CLUTTER_BACKEND = "wayland";
-    GTK_THEME = "Colloid-Green-Dark-Gruvbox";
+    GTK_THEME = "Catppuccin-Mocha-Standard-Blue-Dark";
     GRIMBLAST_HIDE_CURSOR = 0;
-    
-    GSK_RENDERER = "gl";
+    /*
+    GSK_RENDERER = "ngl";
     LIBVA_DRIVER_NAME = "nvidia";
     # Use NVIDIA for VDPAU           # Default to Intel for Wayland
     GBM_BACKEND = "nvidia-drm";
     NIXPKGS_ALLOW_UNFREE = "1";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia"; # NVIDIA GLX (when offloading)# Best for HD 620 (Kaby Lake)
-  };
+  */};
 }
