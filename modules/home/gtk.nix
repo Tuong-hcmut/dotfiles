@@ -11,8 +11,6 @@
     fantasque-sans-mono
     maple-mono.truetype-autohint
   ];
-  #gtk-im-module=fcitx;
-  #QT_IM_MODULE=fcitx;
   gtk = {
     enable = true;
     font = {

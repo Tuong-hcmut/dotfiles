@@ -24,6 +24,5 @@
     
     platformio
     avrdude
-    anki-bin
   ];
 }

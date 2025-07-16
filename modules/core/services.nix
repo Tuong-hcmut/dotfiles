@@ -2,7 +2,6 @@
 {
   services = {
     gvfs.enable = true;
-    #fcitx5.enable = true;
     gnome = {
       tinysparql.enable = true;
       gnome-keyring.enable = true;

@@ -33,6 +33,7 @@ in {
           enable = true;
           enableOffloadCmd = true;
         };
+        sync.enable = false;
         # Make sure to use the correct Bus ID values for your system!
         intelBusId = "${cfg.intelBusID}";
         nvidiaBusId = "${cfg.nvidiaBusID}";

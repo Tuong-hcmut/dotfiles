@@ -18,8 +18,7 @@ in
         "wl-paste --watch cliphist store &"
         "waybar &"
         #"ibus start --type wayland"
-        "fcitx5 &"
-        "nemo --no-desktop --quit"
+        "fcitx5 -d"
 
         "swaync &"
         "hyprctl setcursor Bibata-Modern-Ice 15 &"
@@ -45,17 +44,17 @@ in
         touchpad = {
           natural_scroll = true;
         };
-        kb_model = "precision_m";
+        # kb_model = "precision_m";
       };
 
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-        gaps_in = 6;
-        gaps_out = 12;
-        border_size = 2;
-        "col.active_border" = "rgb(8e8585) rgb(CC241D) 135deg";
-        "col.inactive_border" = "0x00000000";
+        gaps_in = 2;
+        gaps_out = 3;
+        border_size = 6;
+        "col.active_border" = "rgba(89b4fa64)"; #"rgb(8e8585) rgb(CC241D) 135deg";
+        "col.inactive_border" = "rgba(11111a00)"; #"0x00000000";
         # border_part_of_window = false;
         no_border_on_floating = false;
       };
@@ -89,15 +88,15 @@ in
       decoration = {
         rounding = 24;
         # active_opacity = 0.90;
-        # inactive_opacity = 0.90;
+        # inactive_opacity = 0.20;
         # fullscreen_opacity = 1.0;
 
         blur = {
-          enabled = true;
+          enabled = false;
           size = 3;
-          passes = 2;
+          passes = 1;
           brightness = 1;
-          contrast = 1.4;
+          contrast = 2;
           ignore_opacity = true;
           noise = 0;
           new_optimizations = true;
@@ -105,13 +104,13 @@ in
         };
 
         shadow = {
-          enabled = true;
+          enabled = false;
 
           ignore_window = true;
           offset = "0 2";
           range = 20;
-          render_power = 3;
-          color = "rgba(00000055)";
+          render_power = 1;
+          color = "rgba(00000017)";
         };
       };
 

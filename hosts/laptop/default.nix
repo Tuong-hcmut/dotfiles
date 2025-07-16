@@ -40,8 +40,8 @@
   #boot.loader.systemd-boot.enable = true;
   #boot.loader.efi.canTouchEfiVariables = true;
   #catppuccin.tty.enable = true;
-  #services.xserver.videoDrivers = ["modesetting" "nvidia"];
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.nvidia.acceptLicense = true;
   nixpkgs.config.allowBroken = true;
   users = {
     mutableUsers = true;
@@ -50,6 +50,7 @@
     acpi
     brightnessctl
     cpupower-gui
+    lm_sensors
     powertop
     thermald
     tlp
@@ -68,7 +69,7 @@
     enable = true;
   };
   services = {
-    power-profiles-daemon.enable = true;
+    power-profiles-daemon.enable = false;
 
     upower = {
       enable = true;
@@ -79,8 +80,8 @@
     };
     
     thermald.enable = true;
-    tlp.enable = false;
-    /*tlp.settings = {
+    tlp.enable = true;
+    tlp.settings = {
     
       enable = false;
       CPU_ENERGY_PERF_POLICY_ON_AC = "balance_power";
@@ -104,10 +105,10 @@
 
       PCIE_ASPM_ON_AC = "default";
       PCIE_ASPM_ON_BAT = "powersupersave";
-    };*/
+    };
   };
 
-  powerManagement.cpuFreqGovernor = null;
+  powerManagement.cpuFreqGovernor = "schedutil";
 
   boot = {
     kernelModules = [ "acpi_call" ];
