@@ -18,7 +18,7 @@ in
         "wl-paste --watch cliphist store &"
         "waybar &"
         #"ibus start --type wayland"
-        "fcitx5 -d"
+        "fcitx5 -d &"
 
         "swaync &"
         "hyprctl setcursor Bibata-Modern-Ice 15 &"
@@ -32,9 +32,9 @@ in
       ];
 
       input = {
-        kb_layout = "us";  # US layout and Vietnamese layout
-        kb_variant = "";  # Variants for US and French layouts
-        kb_options = "grp:alt_caps_toggle";
+        # kb_layout = "us";  # US layout and Vietnamese layout
+        # kb_variant = "";  # Variants for US and French layouts
+        # kb_options = "grp:alt_caps_toggle";
         numlock_by_default = true;
         repeat_delay = 300;
         follow_mouse = 0;

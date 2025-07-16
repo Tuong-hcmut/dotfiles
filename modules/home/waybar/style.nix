@@ -104,7 +104,7 @@ in
       padding: 1px;
     }
 
-    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-notification {
+    #pulseaudio, #network, #cpu, #memory, #disk, #battery/*, #language*/, #custom-notification {
       padding-left: 5px;
       padding-right: 5px;
       margin-right: 10px;
@@ -114,7 +114,7 @@ in
       border-radius: 20px;
     }
 
-    #pulseaudio, #language {
+    #pulseaudio/*, #language*/ {
       margin-left: 15px;
     }
 

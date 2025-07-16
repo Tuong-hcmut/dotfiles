@@ -32,12 +32,14 @@
     # LIBGL_ALWAYS_SOFTWARE = "1";
     GTK_IM_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
+    IMSETTINGS_MODULE = "fcitx";
     XMODIFIERS = "@im=fcitx";
     INPUT_METHOD = "fcitx";
     SDL_IM_MODULE = "fcitx";
     OZONE_PLATFORM = "wayland";
     GTK_USE_PORTAL = 1;
-    
+    GLFW_IM_MODULE = "fcitx";
+
     GSK_RENDERER = "ngl";
     LIBVA_DRIVER_NAME = "nvidia";
     # Use NVIDIA for VDPAU           # Default to Intel for Wayland

@@ -7,6 +7,8 @@
     nerd-fonts.caskaydia-cove
     nerd-fonts.symbols-only
     twemoji-color-font
+    noto-fonts
+    noto-fonts-cjk-sans
     noto-fonts-emoji
     fantasque-sans-mono
     maple-mono.truetype-autohint
