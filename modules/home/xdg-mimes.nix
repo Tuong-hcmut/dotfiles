@@ -3,7 +3,7 @@ with lib;
 let
   defaultApps = {
     browser = [ "zen-beta.desktop" ];
-    text = [ "helix.desktop" ];
+    text = [ "vscodium.desktop" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];

@@ -51,7 +51,7 @@ in {
       nvidiaPersistenced = false;
       open = false;
       nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.legacy_470;
       #package = nvidiaPackage;
     };
   };

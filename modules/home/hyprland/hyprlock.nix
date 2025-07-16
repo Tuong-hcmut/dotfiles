@@ -24,11 +24,11 @@
           monitor = "";
           #path = "${../../../wallpapers/otherWallpaper/gruvbox/astronaut.jpg}";
           path = "${../../../wallpapers/otherWallpaper/gruvbox/hill_of_swords.png}";
-          blur_passes = 2;
-          contrast = 0.8916;
-          brightness = 0.8172;
-          vibrancy = 0.1696;
-          vibrancy_darkness = 0.0;
+          #blur_passes = 2;
+          #contrast = 0.8916;
+          #brightness = 0.8172;
+          #vibrancy = 0.1696;
+          #vibrancy_darkness = 0.0;
         }
       ];
 
@@ -37,7 +37,7 @@
         {
           monitor = "";
           size = "300, 50";
-          color = "rgba(102, 92, 84, 0.33)";
+          color = "rgba(102, 92, 84, 0.66)";
           rounding = 10;
           border_color = "rgba(255, 255, 255, 0)";
           position = "0, ${if host == "laptop" then "120" else "270"}";
@@ -93,8 +93,8 @@
           dots_size = 0.25;
           dots_spacing = 0.4;
           dots_center = true;
-          outer_color = "rgba(102, 92, 84, 0.33)";
-          inner_color = "rgba(102, 92, 84, 0.33)";
+          outer_color = "rgba(102, 92, 84, 0.66)";
+          inner_color = "rgba(102, 92, 84, 0.66)";
           color = "rgba(235, 219, 178, 0.9)";
           font_color = "rgba(235, 219, 178, 0.9)";
           font_size = 25;

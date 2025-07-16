@@ -22,7 +22,7 @@ in
     selection-invert-fg-bg = true
 
     # Theme
-    theme = "Catppuccin-mocha"
+    theme = "catppuccin-mocha"
     background-opacity = 0.66
 
     cursor-style = bar

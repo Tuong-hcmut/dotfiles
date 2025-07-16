@@ -23,5 +23,8 @@
     ## Level editor
     ldtk
     tiled
+
+    ## Stuff
+    #anki-bin
   ];
 }

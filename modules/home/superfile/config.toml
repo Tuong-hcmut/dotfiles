@@ -1,6 +1,6 @@
 # ========== General ========== #
 theme = 'catppuccin-mocha'
-editor = "helix"
+editor = "vscodium"
 dir_editor = "superfile"
 
 auto_check_update = false
@@ -26,6 +26,7 @@ code_previewer = 'bat'
 nerdfont = true
 transparent_background = true
 
+show_image_preview = true
 file_preview_width = 0
 sidebar_width = 20
 
@@ -33,13 +34,17 @@ border_top = '─'
 border_bottom = '─'
 border_left = '│'
 border_right = '│'
-border_top_left = '┌'
-border_top_right = '┐'
-border_bottom_left = '└'
-border_bottom_right = '┘'
+border_top_left = '╭'
+border_top_right = '╮'
+border_bottom_left = '╰'
+border_bottom_right = '╯'
 border_middle_left = '├'
 border_middle_right = '┤'
 
 # ========== Plugins ========== #
 metadata = false # needs exiftool
 enable_md5_checksum = false
+
+enable_content_search = true
+content_searcher = "rg"
+content_search_flags = ["--line-number", "--color", "never"]
