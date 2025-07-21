@@ -10,7 +10,7 @@
     ./cava.nix                        # audio visualizer
     ./discord.nix                     # discord
     ./fastfetch.nix                   # fetch tool
-    ./fcitx5.nix                      # language input tool
+    # ./fcitx5.nix                      # language input tool
     ./flow.nix                        # terminal text editor
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming

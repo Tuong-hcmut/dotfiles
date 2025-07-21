@@ -1,0 +1,12 @@
+include "%L"
+<dead_acute> <ohorn> : "ớ"
+<dead_grave> <ohorn> : "ờ"
+<dead_hook>  <ohorn> : "ở"
+<dead_tilde> <ohorn> : "ỡ"
+<dead_belowdot> <ohorn> : "ợ"
+
+<dead_acute> <uhorn> : "ứ"
+<dead_grave> <uhorn> : "ừ"
+<dead_hook>  <uhorn> : "ử"
+<dead_tilde> <uhorn> : "ữ"
+<dead_belowdot> <uhorn> : "ự"

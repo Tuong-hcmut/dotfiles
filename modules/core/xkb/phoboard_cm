@@ -1,0 +1,26 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1] = "Vietnamese (Phoboard - Colemak)";
+
+    include "us(colemak)"
+    include "level3(ralt_switch)"
+
+    // Letters
+    key <AD02> { [ w, W, abreve, Abreve ] };           // AltGr+w → ă
+    key <AD08> { [ u, U, uhorn, Uhorn ] };             // AltGr+u → ư
+    key <AC01> { [ a, A, acircumflex, Acircumflex ] }; // AltGr+a → â
+    key <AC05> { [ d, D, dstroke, Dstroke ] };         // AltGr+d → đ
+    key <AC08> { [ e, E, ecircumflex, Ecircumflex ] }; // AltGr+e → ê
+    key <AC09> { [ i, I, ohorn, Ohorn ] };             // AltGr+i → ơ
+    key <AC10> { [ o, O, ocircumflex, Ocircumflex ] }; // AltGr+o → ô
+
+    // Accents v4
+    key <AC02> { [ r, R, 0x1000301, 0x1000301 ] };     // AltGr+r → ´
+    key <AC04> { [ t, T, 0x1000300, 0x1000300 ] };     // AltGr+t → `
+    key <AD05> { [ g, G, 0x1000303, 0x1000303 ] };     // AltGr+g → ~
+    key <AC07> { [ n, N, 0x1000323, 0x1000323 ] };     // AltGr+n → .
+    key <AD04> { [ p, P, 0x1000309, 0x1000309 ] };     // AltGr+p → ?
+
+    // Caps
+    key <CAPS> { [ BackSpace, BackSpace, Caps_Lock, Caps_Lock ] };     // AltGr+Caps Lock → CapsLock
+};

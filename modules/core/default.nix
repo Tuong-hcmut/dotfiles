@@ -17,5 +17,7 @@
     ./user.nix
     ./wayland.nix
     ./virtualization.nix
+    # ./fcitx5.nix
+    ./xkb
   ];
 }

@@ -22,7 +22,7 @@
     catppuccin = {
     enable = true;
     flavor = "mocha";
-    accent = "mauve";
+    accent = "lavender";
     size = "standard";
     tweaks = [ "normal" ];
   };

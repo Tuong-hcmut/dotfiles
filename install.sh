@@ -104,11 +104,11 @@ aseprite() {
     read -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        # Uncomment line 3 if commented
-        sed -i '3s/^  # //' modules/home/aseprite/aseprite.nix
+        # Remove all '#' characters from line 3
+        sed -i '3s/#//g' modules/home/aseprite/aseprite.nix
     else
-        # Comment line 3 if not already
-        sed -i '3{/^[[:space:]]*#/!s/^[[:space:]]*/  # /}' modules/home/aseprite/aseprite.nix
+        # Ensure line 3 starts with '  # ' regardless of current formatting
+        sed -i '3{/^[[:space:]]*#/!s|^|  # |}' modules/home/aseprite/aseprite.nix
     fi
 }
 
@@ -157,7 +157,7 @@ use_default_config() {
         HOST='laptop'  # Set default host, change as needed
         echo -e "Using default username: ${GREEN}$username${NORMAL}, host: ${GREEN}$HOST${NORMAL}, and Aseprite: ${ASESPRITE_COLOR}."
         if [[ ! $ASESPRITE =~ ^[Yy]$ ]]; then
-           sed -i '3s/  /  # /' modules/home/aseprite/aseprite.nix
+            sed -i '3{/^[[:space:]]*#/!s|^|  # |}' modules/home/aseprite/aseprite.nix
         fi
     else
         get_username

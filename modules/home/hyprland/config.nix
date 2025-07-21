@@ -17,8 +17,8 @@ in
         "wl-clip-persist --clipboard both &"
         "wl-paste --watch cliphist store &"
         "waybar &"
-        #"ibus start --type wayland"
-        "fcitx5 -d &"
+        # "ibus start --type wayland"
+        # "fcitx5 -d &"
 
         "swaync &"
         "hyprctl setcursor Bibata-Modern-Ice 15 &"
@@ -32,19 +32,16 @@ in
       ];
 
       input = {
-        # kb_layout = "us";  # US layout and Vietnamese layout
-        # kb_variant = "";  # Variants for US and French layouts
-        # kb_options = "grp:alt_caps_toggle";
+        kb_layout = "phoboard,phoboard_cm,jp";
+        kb_variant = "basic,basic,kana";
+        kb_options = "grp:ctrls_toggle,lv3:ralt_switch";
         numlock_by_default = true;
         repeat_delay = 300;
         follow_mouse = 0;
         float_switch_override_focus = 0;
         mouse_refocus = 0;
         sensitivity = 0;
-        touchpad = {
-          natural_scroll = true;
-        };
-        # kb_model = "precision_m";
+        touchpad.natural_scroll = true;
       };
 
       general = {
@@ -166,6 +163,7 @@ in
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
         "ALT, Escape, exec, hyprlock"
+        "$mainMod, A, exec, anki"
         "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
         "$mainMod, X, togglesplit,"

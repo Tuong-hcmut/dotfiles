@@ -1,0 +1,29 @@
+// phoboard - Vietnamese custom layout
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1] = "Vietnamese (Phoboard)";
+
+    include "us(basic)"
+    include "level3(ralt_switch)"
+
+    // Letters
+    key <AD02> { [ w, W, abreve, Abreve ] };           // AltGr+w → ă
+    key <AD03> { [ e, E, ecircumflex, Ecircumflex ] }; // AltGr+e → ê
+    key <AD07> { [ u, U, uhorn, Uhorn ] };             // AltGr+u → ư
+    key <AD08> { [ i, I, ohorn, Ohorn ] };             // AltGr+i → ơ
+    key <AD09> { [ o, O, ocircumflex, Ocircumflex ] }; // AltGr+o → ô
+    key <AC01> { [ a, A, acircumflex, Acircumflex ] }; // AltGr+a → â
+    key <AC03> { [ d, D, dstroke, Dstroke ] };         // AltGr+d → đ
+
+    // Accents v4
+
+    key <AC02> { [ s, S, 0x1000301, 0x1000301 ] };     // AltGr+s → ´
+    key <AC04> { [ f, F, 0x1000300, 0x1000300 ] };     // AltGr+f → `
+    key <AD05> { [ t, T, 0x1000303, 0x1000303 ] };     // AltGr+t → ~
+    key <AC07> { [ j, J, 0x1000323, 0x1000323 ] };     // AltGr+j → .
+    key <AD04> { [ r, R, 0x1000309, 0x1000309 ] };     // AltGr+r → ?
+
+    // Caps
+    key <CAPS> { [ Caps_Lock, Caps_Lock, BackSpace, BackSpace ] };     // AltGr+Caps Lock → Backspace
+};

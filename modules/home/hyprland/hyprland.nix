@@ -12,6 +12,7 @@
     glib
     wayland
     direnv
+    xkeyboard_config
   ];
   systemd.user.targets.hyprland-session.Unit.Wants = [
     "xdg-desktop-autostart.target"

@@ -1,0 +1,4 @@
+cd modules/core/xkb
+cp "$(ls -1 /nix/store/*-xkeyboard-config-*/share/X11/xkb/rules/evdev.xml | sort | head -n1)" evdev-patched.xml
+sudo cp "$(ls -1 /nix/store/*-xkeyboard-config-*/share/X11/xkb/rules/evdev.lst | sort | head -n1)" evdev-patched.lst
+

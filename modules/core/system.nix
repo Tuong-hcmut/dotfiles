@@ -24,14 +24,6 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    fcitx5
-    fcitx5-configtool
-    fcitx5-gtk
-    libsForQt5.fcitx5-unikey
-    fcitx5-bamboo
-
-    # fcitx5-qt5
-    # fcitx5-qt6
   ];
 
   i18n = {
@@ -47,18 +39,15 @@
       LC_TELEPHONE = "vi_VN";
       LC_TIME = "vi_VN";
     };
-    inputMethod = {
-      type = "fcitx5";
-      enable = true;
+    /*inputMethod = {
+      enabled = "fcitx5";
       fcitx5.addons = with pkgs; [
-        fcitx5-gtk
-        libsForQt5.fcitx5-unikey
         fcitx5-bamboo
-        fcitx5-mozc
-        # fcitx5-qt5
-        # fcitx5-qt6
+        fcitx5-gtk
+        libsForQt5.fcitx5-qt
+        kdePackages.fcitx5-qt
       ];
-    };
+    };*/
   };
 
   time.timeZone = "Asia/Ho_Chi_Minh";
